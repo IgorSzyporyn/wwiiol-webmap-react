@@ -1,0 +1,50 @@
+@mixin slide-in($distance) {
+  @keyframes slide-in {
+    0% {
+      transform: translateX($distance);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+@mixin slide-out($distance) {
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX($distance * -1);
+    }
+  }
+}
+
+@mixin slide-animation($timing) {
+  animation-duration: $timing;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@mixin transition-card-slide($slide-in-time: 350ms, $slide-out-time: 150ms, $distance: 2000px) {
+  .cardSlide {
+    &-enter {
+      &-active {
+        @include slide-animation($slide-in-time);
+        @include slide-in($distance);
+        animation-name: slide-in;
+      }
+    }
+
+    &-exit {
+      &-active {
+        @include slide-animation($slide-out-time);
+        @include slide-out($distance);
+        animation-name: slide-out;
+      }
+    }
+  }
+}

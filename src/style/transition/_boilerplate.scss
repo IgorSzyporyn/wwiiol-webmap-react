@@ -1,0 +1,32 @@
+@mixin page-transition-BOILERPLATE {
+  .BOILERPLATE {
+    // Stage APPEAR
+    &-appear {
+      // Stage APPEAR ACTIVE
+      &#{&-active} {
+      }
+    }
+
+    // Stage ENTER
+    &-enter {
+      // Stage ENTER ACTIVE
+      &#{&-active} {
+      }
+
+      // Stage ENTER DONE
+      &#{&-done} {
+      }
+    }
+
+    // Stage EXIT
+    &-exit {
+      // Stage EXIT ACTIVE
+      &#{&-active} {
+      }
+
+      // Stage EXIT DONE
+      &#{&-done} {
+      }
+    }
+  }
+}

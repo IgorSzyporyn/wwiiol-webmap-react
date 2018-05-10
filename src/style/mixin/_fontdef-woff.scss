@@ -1,0 +1,6 @@
+/* stylelint-disable */
+@mixin fontdef-woff($font-path, $font-name, $font-version: '1.0.0', $FontType: 'Regular') {
+  src: url('#{$font-path}/#{$FontType}/#{$font-name}-#{$FontType}.woff2?v=#{$font-version}') format('woff2'),
+    url('#{$font-path}/#{$FontType}/#{$font-name}-#{$FontType}.woff?v=#{$font-version}') format('woff');
+}
+/* stylelint-enable */

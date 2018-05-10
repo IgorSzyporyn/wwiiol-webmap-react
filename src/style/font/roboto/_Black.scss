@@ -1,0 +1,8 @@
+@import '../../mixin/fontdef-woff';
+
+@font-face {
+  @include fontdef-woff($font-path, $font-name, $font-version, 'Black');
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+}

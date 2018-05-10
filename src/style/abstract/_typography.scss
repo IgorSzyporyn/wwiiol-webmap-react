@@ -1,0 +1,129 @@
+@import "../variable/typography";
+@import "../variable/color";
+
+@mixin typography-display4 {
+  color: $color-text-normal;
+  font-size: 112px;
+  font-weight: $typography-weight-light;
+}
+
+@mixin typography-display3 {
+  color: $color-text-normal;
+  font-size: 56px;
+  font-weight: $typography-weight-regular;
+}
+
+@mixin typography-display2 {
+  color: $color-text-normal;
+  font-size: 45px;
+  font-weight: $typography-weight-regular;
+}
+
+@mixin typography-display1 {
+  color: $color-text-normal;
+  font-size: 34px;
+  font-weight: $typography-weight-regular;
+}
+
+@mixin typography-headline {
+  color: $color-text-normal;
+  font-size: 24px;
+  font-weight: $typography-weight-regular;
+}
+
+@mixin typography-title {
+  color: $color-text-normal;
+  font-size: 20px;
+  font-weight: $typography-weight-medium;
+}
+
+@mixin typography-subheading {
+  color: $color-text-normal;
+  font-size: 15px;
+  font-weight: $typography-weight-regular;
+}
+
+@mixin typography-subheading-device {
+  font-size: 16px;
+}
+
+@mixin typography-body2 {
+  color: $color-text-normal;
+  font-size: 13px;
+  font-weight: $typography-weight-medium;
+}
+
+@mixin typography-body2-device {
+  font-size: 14px;
+}
+
+@mixin typography-body1 {
+  color: $color-text-normal;
+  font-size: 13px;
+  font-weight: $typography-weight-regular;
+}
+
+@mixin typography-body1-device {
+  font-size: 14px;
+}
+
+@mixin typography-caption {
+  color: $color-text-normal;
+  font-size: 12px;
+  font-weight: $typography-weight-light;
+}
+
+@mixin typography-button {
+  color: $color-text-normal;
+  font-size: 14px;
+  font-weight: $typography-weight-medium;
+  text-transform: uppercase;
+}
+
+@mixin typography-h1 {
+  @include typography-headline;
+  line-height: 1.2em;
+  margin: 1em 0 0.5em;
+  padding: 0;
+}
+
+@mixin typography-h2 {
+  @include typography-subheading;
+  margin: 1em 0 0.5em;
+  line-height: 1.2em;
+  padding: 0;
+}
+
+@mixin typography-h3 {
+  @include typography-title;
+  margin: 1em 0 0.5em;
+  line-height: 1.2em;
+  padding: 0;
+}
+
+@mixin typography-h4 {
+  @include typography-caption;
+  margin: 1em 0 0.5em;
+  line-height: 1.2em;
+  padding: 0;
+}
+
+@mixin typography-h5 {
+  @include typography-caption;
+  margin: 1em 0 0.5em;
+  line-height: 1.2em;
+  padding: 0;
+}
+
+@mixin typography-h6 {
+  @include typography-caption;
+  margin: 1em 0 0.5em;
+  line-height: 1.2em;
+  padding: 0;
+}
+
+@mixin typography-paragraph {
+  @include typography-body1;
+  margin: 1em 0 1.84em;
+  padding: 0;
+}

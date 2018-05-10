@@ -1,0 +1,18 @@
+@import 'style/mixin/full-size';
+
+.App {
+  @include full-size;
+
+  &__map {
+    @include full-size;
+    z-index: 100;
+  }
+
+  &__interface {
+    z-index: 200;
+  }
+
+  &__loader {
+    z-index: 300;
+  }
+}

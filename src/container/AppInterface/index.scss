@@ -1,0 +1,6 @@
+@import 'style/variable/metric';
+@import 'style/mixin/full-size';
+
+.AppInterface {
+  @include full-size;
+}

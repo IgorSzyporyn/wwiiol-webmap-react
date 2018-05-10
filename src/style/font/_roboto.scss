@@ -1,0 +1,16 @@
+$font-path: '../font/roboto' !default;
+$font-name: 'Roboto' !default;
+$font-version: '2.137' !default;
+
+@import './roboto/Regular';
+@import './roboto/Thin';
+@import './roboto/Italic';
+@import './roboto/Light';
+@import './roboto/Bold';
+@import './roboto/Black';
+@import './roboto/ThinItalic';
+@import './roboto/LightItalic';
+@import './roboto/Medium';
+@import './roboto/MediumItalic';
+@import './roboto/BoldItalic';
+@import './roboto/BlackItalic';

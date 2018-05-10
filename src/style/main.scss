@@ -1,0 +1,12 @@
+@import '../node_modules/normalize-scss/sass/normalize/_import-now.scss';
+@import './layout';
+// @import "./typography";
+@import './variable/color';
+
+html {
+  background-color: transparent;
+}
+
+body {
+  background-color: $color-background-lighter;
+}

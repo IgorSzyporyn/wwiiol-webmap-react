@@ -1,0 +1,39 @@
+@import './font/roboto';
+@import './variable/typography';
+@import './abstract/typography';
+
+html,
+body {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: $typography-weight-regular;
+  line-height: 1.7144em;
+}
+
+h1 {
+  @include typography-h1;
+}
+
+h2 {
+  @include typography-h2;
+}
+
+h3 {
+  @include typography-h3;
+}
+
+h4 {
+  @include typography-h4;
+}
+
+h5 {
+  @include typography-h5;
+}
+
+h6 {
+  @include typography-h6;
+}
+
+p {
+  @include typography-paragraph;
+}

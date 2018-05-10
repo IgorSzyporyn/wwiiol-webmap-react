@@ -1,0 +1,21 @@
+.Roundel {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  &--1 {
+    background-image: svg-load('image/roundel-allied.svg');
+  }
+
+  &--2 {
+    background-image: svg-load('image/roundel-allied.svg');
+  }
+
+  &--3 {
+    background-image: svg-load('image/roundel-allied.svg');
+  }
+
+  &--4 {
+    background-image: svg-load('image/roundel-axis.svg');
+  }
+}
